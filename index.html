@@ -1,0 +1,863 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TripGuide</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./assets/images/header/Subtract.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header class="d-flex justify-content-between align-items-center">
+            <div class="logo__box d-flex align-items-center">
+                <div class="logo__icon">
+                    <img src="./assets/images/header/Subtract.png" alt="logo">
+                </div>
+                <div class="logo__content">
+                    <h2 class="logo__title">TripGuide</h2>
+                </div>
+            </div>
+            <div class="right__box d-flex">
+                <div class="right__box--content d-flex align-items-center">
+                    <h4><span class="right__box--currency">USD</span></h4>
+                    <div class="right__box--icon">
+                        <img src="./assets/images/header/flag-of-the-united-states.png" alt="usa">
+                        <img src="./assets/images/header/Shape.png" alt="notification">
+                    </div>
+                </div>
+                <div class="right__box--user d-flex align-items-center">
+                    <div class="image__user">
+                        <img src="./assets/images/header/user.png" alt="user">
+                    </div>
+                    <div class="user__box">
+                        <h3 class="user__name">Delowar</h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="image__background">
+            <div class="container box__banner">
+                <div class="row">
+                    <div class="col-md-5 headline__box">
+                        <div class="headline">
+                            <h2>
+                                Book With Us And Enjoy your Journey !
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 main-search-bar">
+                        <div class="search-bar">
+                            <div class="row">
+                                <div class="col-md-10 d-flex justify-content-between search-bar-content p-0">
+                                    <ul class="service-list d-flex justify-content-start align-items-center">
+                                        <li><a href=""><i class="fa fa-bed service-icon" aria-hidden="true"></i>Hotel</a></li>
+                                        <li><a href=""><i class="fa fa-fighter-jet service-icon" aria-hidden="true"></i>Flight</a></li>
+                                        <li><a href=""><i class="fa fa-car service-icon" aria-hidden="true"></i>Car Rental</a></li>
+                                    </ul>
+                                    <ul class="service-information  d-flex justify-content-end align-items-center"> 
+                                        <li>
+                                            <a class="service-information__link" href="#">Round trip</a>                                      
+                                        </li>
+                                        <li>
+                                            <a class="service-information__link" href="#">1 passenger</a>                                       
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 p-0">
+                                    <div class="content__search">
+                                        <div class="location">
+                                            <label for="location" class="form-label">Location</label>
+                                            <input type="text" class="form-control" id="location" placeholder="Where are you from?">
+
+                                            <div class="location_items">
+                                                <ul>
+                                                    <li class="d-flex align-items-center justify-content-start mb--20">
+                                                        <div class="location__icon">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                        <a class="location__title" href="">Dubai <span class="d-block">Dubai Emirate, United Arab Emirates</span></a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center justify-content-start mb--20">
+                                                        <div class="location__icon">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                        <a class="location__title" href="">Doha <span class="d-block">Qatar</span></a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center justify-content-start mb--20">
+                                                        <div class="location__icon">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                        <a class="location__title" href="">Darling Harbour <span class="d-block">Sydney, New South Wales, Australia</span></a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center justify-content-start mb--20">
+                                                        <div class="location__icon">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                        <a class="location__title" href="">Dhaka <span class="d-block">Bangladesh</span></a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center justify-content-start">
+                                                        <div class="location__icon">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                        <a class="location__title" href="">Dubai International Airport <span class="d-block">Dubai, Dubai Emirate, United Arab Emirates</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="location__arrow left">
+                                            <img src="./assets/images/banner/arrow.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 p-0">
+                                    <div class="content__search">
+                                        <div class="check-in">
+                                            <label for="check-in" class="form-label">Check in</label>
+                                            <input type="text" class="form-control" id="check-in" placeholder="Add Date">
+                                        </div>
+                                    </div>
+                                    <div class="check-in__arrow right">
+                                        <img src="./assets/images/banner/arrow.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 p-0">
+                                    <div class="content__search">
+                                        <div class="check-out">
+                                            <label for="check-out" class="form-label">Check out</label>
+                                            <input type="text" class="form-control" id="check-out" placeholder="Add date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-0 passenger__box">
+                                    <div class="content__search">
+                                        <div class="passenger">
+                                            <label for="passenger" class="form-label">Passenger</label>
+                                            <input type="text" class="form-control" id="passenger" placeholder="Add passenger">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                    <div class="content__search">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>                               
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-best-place">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-best-place__content text-center">
+                            <h2>Search a best place in the world
+                                <span>Whether you’re looking for places for a vacation. We are here to Guide you
+                                    about the details you need to check in and ease your trips in advance</span>
+                            </h2>                      
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--65">
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-1.jpg" alt="best-place-1">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Batu, East Java
+                                    <span>86 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-2.jpg" alt="best-place-2">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Kuta
+                                    <span>86 Destinations</span>
+                                </h5>
+                            </div>
+                            <div class="best-place__box-hot">
+                                <span>hot</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-3.jpg" alt="best-place-3">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Surabaya, East Java
+                                    <span>86 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-4.jpg" alt="best-place-4">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Malang, East Java
+                                    <span>186 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-5.jpg" alt="best-place-5">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Dieng, Central Java
+                                    <span>86 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-6.jpg" alt="best-place-6">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Nusa Dua, Lombok
+                                    <span>86 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-7.jpg" alt="best-place-7">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Bandung, West Java
+                                    <span>86 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8 py--15">
+                        <div class="best-place__box">
+                            <div class="best-place__box-img">
+                                <img src="./assets/images/best-place/place-item-8.jpg" alt="best-place-8">
+                            </div>
+                            <div class="best-place__box-des">
+                                <h5>Wakatobi, Sumatera
+                                    <span>186 Destinations</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-destinations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="featured-destinations__content text-start">
+                            <h2>Featured Destinations
+                                <span>Popular destinations open to visitors from Indonesia</span>
+                            </h2>   
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 mt--37 pr--15">
+                        <div class="row">
+                            <div class="col-12 mb--30">
+                                <div class="barcelona-tour">
+                                    <div class="barcelona-tour__img">
+                                        <a href=""><img src="./assets/images/featured-destinations/barcelona-tour.jpg" alt="barcelona-tour"></a>
+                                        <div class="barcelona-tour__content">
+                                            <a href="">Barcelona Tour</a>
+                                            <div class="avt__user d-flex align-items-center">
+                                                <img src="./assets/images/featured-destinations/avt-user.png" alt="user">
+                                                <span>196 Activities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pr--30">
+                                <div class="london-tour">
+                                    <div class="london-tour__img">
+                                        <a href=""><img src="./assets/images/featured-destinations/london.jpg" alt="london-tour"></a>
+                                        <div class="london-tour__content">
+                                            <a href="">London, United State</a>
+                                            <div class="london-avt__user d-flex align-items-center">
+                                                <img src="./assets/images/featured-destinations/avt-user.png" alt="user">
+                                                <span>196 Activities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pl--30">
+                                <div class="australia-tour">
+                                    <div class="australia-tour__img">
+                                        <a href=""><img src="./assets/images/featured-destinations/australia.jpg" alt="australia-tour"></a>
+                                        <div class="australia-tour__content">
+                                            <a href="">Australia Tour</a>
+                                            <div class="australia-avt__user d-flex align-items-center">
+                                                <img src="./assets/images/featured-destinations/avt-user.png" alt="user">
+                                                <span>196 Activities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mt--37 pl--15">
+                        <div class="row">
+                            <div class="col-12 mb--30">
+                                <div class="japan-tour">
+                                    <div class="japan-tour__img">
+                                        <a href=""><img src="./assets/images/featured-destinations/australia-1.jpg" alt="australia-tour-1"></a>
+                                        <div class="japan-tour__content">
+                                            <a href="">Australia Tour</a>
+                                            <div class="japan-avt__user d-flex align-items-center">
+                                                <img src="./assets/images/featured-destinations/avt-user.png" alt="user">
+                                                <span>196 Activities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb--30">
+                                <div class="japan-tour">
+                                    <div class="japan-tour__img">
+                                        <a href=""><img src="./assets/images/featured-destinations/japan-1.jpg" alt="japan-1-tour"></a>
+                                        <div class="japan-tour__content">
+                                            <a href="">Japan Tour</a>
+                                            <div class="japan-avt__user d-flex align-items-center">
+                                                <img src="./assets/images/featured-destinations/avt-user.png" alt="user">
+                                                <span>196 Activities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="japan-tour">
+                                    <div class="japan-tour__img">
+                                        <a href=""><img src="./assets/images/featured-destinations/japan.jpg" alt="japan-tour"></a>
+                                        <div class="japan-tour__content">
+                                            <a href="">Japan Tour</a>
+                                            <div class="japan-avt__user d-flex align-items-center">
+                                                <img src="./assets/images/featured-destinations/avt-user.png" alt="user">
+                                                <span>196 Activities</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-top-tour mt--70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb--60">
+                        <div class="section-top-tour__content text-start">
+                            <h2>Top Tour
+                                <span>Keep calm & travel on</span>
+                            </h2>
+                            <div class="arrow__box">
+                                <a href=""><i class="fa fa-angle-left"></i></a>
+                                <a href=""><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-tour-items japan">
+                            <a href=""><img src="./assets/images/top-tour/japan.jpg" alt="japan"></a>
+                            <div class="top-tour__content">
+                                <div class="top-tour__des">
+                                    <h4>
+                                        Japan
+                                        <span>10 Popular Places</span>                                    
+                                    </h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-tour-items indonesia">
+                            <a href=""><img src="./assets/images/top-tour/bali.jpg" alt="bali"></a>
+                            <div class="top-tour__content">
+                                <div class="top-tour__des">
+                                    <h4>
+                                        Bali
+                                        <span>10 Popular Places</span>                                    
+                                    </h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-tour-items barcelona">
+                            <a href=""><img src="./assets/images/top-tour/spain.jpg" alt="spain"></a>
+                            <div class="top-tour__content">
+                                <div class="top-tour__des">
+                                    <h4>
+                                        Spain
+                                        <span>10 Popular Places</span>                                    
+                                    </h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore-the-world mt--70 mb--70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb--60">
+                        <div class="section-top-tour__content text-start">
+                            <h2>Explore The World
+                                <span>10,788 beautiful places to go</span>
+                            </h2>
+                            <div class="arrow__box">
+                                <a href=""><i class="fa fa-angle-left"></i></a>
+                                <a href=""><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="explore-items">
+                            <div class="explore-item-box">
+                                <div class="explore-item__img">
+                                    <a href=""><img src="./assets/images/explore-the-world/item-1.jpg" alt="turkey-mamaris"></a>
+                                </div>
+                                <div class="explore-item__des">
+                                    <ul>
+                                        <li class="explore-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>
+                                        <li class="explore-title">
+                                            Comfort Space
+                                        </li>
+                                        <li class="explore-distance">
+                                            1.2 km to Town Center
+                                        </li>
+                                        <li class="explore-location">
+                                            <i class="fa fa-map-marker"></i>Turkey, Mamaris
+                                        </li>
+                                        <li class="explore-building">
+                                            <i class="fa fa-building" ></i>Rooms available: 375
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="explore-items">
+                            <div class="explore-item-box">
+                                <div class="explore-item__img">
+                                    <a href=""><img src="./assets/images/explore-the-world/item-2.jpg" alt="turkey-mamaris"></a>
+                                </div>
+                                <div class="explore-item__des">
+                                    <ul>
+                                        <li class="explore-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>
+                                        <li class="explore-title">
+                                            Comfort Space
+                                        </li>
+                                        <li class="explore-distance">
+                                            1.2 km to Town Center
+                                        </li>
+                                        <li class="explore-location">
+                                            <i class="fa fa-map-marker"></i>Turkey, Mamaris
+                                        </li>
+                                        <li class="explore-building">
+                                            <i class="fa fa-building" ></i>Rooms available: 375
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="explore-items">
+                            <div class="explore-item-box">
+                                <div class="explore-item__img">
+                                    <a href=""><img src="./assets/images/explore-the-world/item-3.jpg" alt="turkey-mamaris"></a>
+                                </div>
+                                <div class="explore-item__des">
+                                    <ul>
+                                        <li class="explore-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>
+                                        <li class="explore-title">
+                                            Comfort Space
+                                        </li>
+                                        <li class="explore-distance">
+                                            1.2 km to Town Center
+                                        </li>
+                                        <li class="explore-location">
+                                            <i class="fa fa-map-marker"></i>Turkey, Mamaris
+                                        </li>
+                                        <li class="explore-building">
+                                            <i class="fa fa-building" ></i>Rooms available: 375
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="explore-items">
+                            <div class="explore-item-box">
+                                <div class="explore-item__img">
+                                    <a href=""><img src="./assets/images/explore-the-world/item-4.jpg" alt="turkey-mamaris"></a>
+                                </div>
+                                <div class="explore-item__des">
+                                    <ul>
+                                        <li class="explore-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>
+                                        <li class="explore-title">
+                                            Comfort Space
+                                        </li>
+                                        <li class="explore-distance">
+                                            1.2 km to Town Center
+                                        </li>
+                                        <li class="explore-location">
+                                            <i class="fa fa-map-marker"></i>Turkey, Mamaris
+                                        </li>
+                                        <li class="explore-building">
+                                            <i class="fa fa-building" ></i>Rooms available: 375
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </section>
+        <section class="trending-cites">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="trending-cites__content text-center">
+                            <h2>Trending cites
+                                <span class="trending-cites__span text-center">The most searched for cities on TripGuide</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="trending-cites-items">
+                            <div class="trending-cites-box d-flex justify-content-start align-items-center">
+                                <div class="trending-cites__img">
+                                    <a href=""><img src="./assets/images/trending-cites/manila.jpg" alt="manila"></a>
+                                </div>
+                                <div class="trending-cites__des">
+                                    <ul>
+                                        <li class="trending-cites-title">
+                                            Manila
+                                        </li>
+                                        <li class="trending-cites-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>     
+                                        <li class="trending-cites-price">
+                                            $250.00<span>/night</span>
+                                        </li>
+                                        <li class="trending-cites-book">
+                                        <button class="btn btn-primary">Book Now</button>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="trending-cites-items">
+                            <div class="trending-cites-box d-flex justify-content-start align-items-center">
+                                <div class="trending-cites__img">
+                                    <a href=""><img src="./assets/images/trending-cites/san-francisco.jpg" alt="san-francisco"></a>
+                                </div>
+                                <div class="trending-cites__des">
+                                    <ul>
+                                        <li class="trending-cites-title">
+                                            San Francisco
+                                        </li>
+                                        <li class="trending-cites-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>     
+                                        <li class="trending-cites-price">
+                                            $250.00<span>/night</span>
+                                        </li>
+                                        <li class="trending-cites-book">
+                                        <button class="btn btn-primary">Book Now</button>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt--35">
+                        <div class="trending-cites-items">
+                            <div class="trending-cites-box d-flex justify-content-start align-items-center">
+                                <div class="trending-cites__img">
+                                    <a href=""><img src="./assets/images/trending-cites/frankfurt-main.jpg" alt="frankfurt-main"></a>
+                                </div>
+                                <div class="trending-cites__des">
+                                    <ul>
+                                        <li class="trending-cites-title">
+                                            Frankfurt main
+                                        </li>
+                                        <li class="trending-cites-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>     
+                                        <li class="trending-cites-price">
+                                            $250.00<span>/night</span>
+                                        </li>
+                                        <li class="trending-cites-book">
+                                        <button class="btn btn-primary">Book Now</button>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt--35">
+                        <div class="trending-cites-items">
+                            <div class="trending-cites-box d-flex justify-content-start align-items-center">
+                                <div class="trending-cites__img">
+                                    <a href=""><img src="./assets/images/trending-cites/washington.jpg" alt="washington"></a>
+                                </div>
+                                <div class="trending-cites__des">
+                                    <ul>
+                                        <li class="trending-cites-title">
+                                            Washington
+                                        </li>
+                                        <li class="trending-cites-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>     
+                                        <li class="trending-cites-price">
+                                            $250.00<span>/night</span>
+                                        </li>
+                                        <li class="trending-cites-book">
+                                        <button class="btn btn-primary">Book Now</button>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt--35">
+                        <div class="trending-cites-items">
+                            <div class="trending-cites-box d-flex justify-content-start align-items-center">
+                                <div class="trending-cites__img">
+                                    <a href=""><img src="./assets/images/trending-cites/stockholm.jpg" alt="stockholm"></a>
+                                </div>
+                                <div class="trending-cites__des">
+                                    <ul>
+                                        <li class="trending-cites-title">
+                                            Stockholm
+                                        </li>
+                                        <li class="trending-cites-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>     
+                                        <li class="trending-cites-price">
+                                            $250.00<span>/night</span>
+                                        </li>
+                                        <li class="trending-cites-book">
+                                        <button class="btn btn-primary">Book Now</button>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt--35">
+                        <div class="trending-cites-items">
+                            <div class="trending-cites-box d-flex justify-content-start align-items-center">
+                                <div class="trending-cites__img">
+                                    <a href=""><img src="./assets/images/trending-cites/seattle.jpg" alt="seattle"></a>
+                                </div>
+                                <div class="trending-cites__des">
+                                    <ul>
+                                        <li class="trending-cites-title">
+                                            Seattle
+                                        </li>
+                                        <li class="trending-cites-rating">
+                                            <p><i class="fa fa-star"></i>4.91 <span>(147)</span></p>
+                                        </li>     
+                                        <li class="trending-cites-price">
+                                            $250.00<span>/night</span>
+                                        </li>
+                                        <li class="trending-cites-book">
+                                        <button class="btn btn-primary">Book Now</button>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="travel-your-passion mt--70 pb--245">
+            <div class="container travel-your-passion-box">
+                <div class="row">
+                    <div class="col-12 mb--60">
+                        <div class="travel-your-passion__content text-start">
+                            <h2>Travel Your Passion
+                                <span>Most Brilliant reasons Entrada should be your one-stop-shop!</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="travel-your-passion__items">
+                            <div class="travel-your-passion__img">
+                                <img src="./assets/images/travel-your-passion/beach.jpg" alt="beach">
+                                <div class="travel-your-passion__des">
+                                    <h4>Beach Hobby</h4>
+                                    <p class="travel-your-passion__para"><i class="fa fa-star"></i>4.8 (122 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="travel-your-passion__items">
+                            <div class="travel-your-passion__img">
+                                <img src="./assets/images/travel-your-passion/city.jpg" alt="city">
+                                <div class="travel-your-passion__des">
+                                    <h4>City Tours</h4>
+                                    <p class="travel-your-passion__para"><i class="fa fa-star"></i>4.8 (122 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="travel-your-passion__items">
+                            <div class="travel-your-passion__img">
+                                <img src="./assets/images/travel-your-passion/hiking.jpg" alt="hiking">
+                                <div class="travel-your-passion__des">
+                                    <h4>Hiking Trips</h4>
+                                    <p class="travel-your-passion__para"><i class="fa fa-star"></i>4.8 (122 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-8">
+                        <div class="travel-your-passion__items">
+                            <div class="travel-your-passion__img">
+                                <img src="./assets/images/travel-your-passion/sport.jpg" alt="sport">
+                                <div class="travel-your-passion__des">
+                                    <h4>Sports Trips</h4>
+                                    <p class="travel-your-passion__para"><i class="fa fa-star"></i>4.8 (122 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pro-offers__box">
+                    <div class="col-md-6">
+                        <div class="pro-offers__des">
+                            <h2>Get our pro offers <span>Create a visual identity for your company, and an overall brand</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pro-offers__button">
+                        <div class="pro-offers__input">
+                                <input type="text" class="" placeholder="Type your email here">
+                                <button type="submit">Subscribe</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 p-0">
+                        <ul class="footer-first-item">
+                            <li>
+                                <a class="d-flex align-items-center" href=""><img src="./assets/images/header/Subtract.png" alt="logo">TripGuide</a>
+                            </li>
+                            <li class="footer-first-item__des">
+                                This is the team that specializes in<br>
+                                making sure in the find it a <br>
+                                your interior looks cool
+                            </li>
+                            <li>
+                                <div class="footer-first-item__icon d-flex align-items-center justify-content-around">
+                                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 p-0">
+                        <h3 class="footer__title">Services</h3>
+                        <ul class="footer__nav">
+                            <li><a href="">Travel Booking</a></li>
+                            <li><a href="">Flight Booking</a></li>
+                            <li><a href="">Car Booking</a></li>
+                            <li><a href="">Fivestar Hotel</a></li>
+                            <li><a href="">Traveling</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 third-item">
+                        <h3 class="footer__title">Support</h3>
+                        <ul class="footer__nav">
+                            <li><a href="">Account</a></li>
+                            <li><a href="">Legal</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="footer__title">Business</h3>
+                        <ul class="footer__nav">
+                            <li><a href="">Success</a></li>
+                            <li><a href="">About Locato</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Travel Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    </html>
