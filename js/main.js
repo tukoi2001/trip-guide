@@ -16,6 +16,15 @@ mobiscroll.datepicker('#check-in', {
     pages: 2,
     selectMultiple: true,
     responsive: {
+        xlarge: {
+            pages: 2,
+        },
+        large: {
+            pages: 2,
+        },
+        medium: {
+            pages: 2,
+        },
         small: {
             pages: 1
         },
@@ -28,9 +37,17 @@ mobiscroll.datepicker('#check-in', {
 mobiscroll.datepicker('#check-out', {
     calendarType: 'month',
     showOuterDays: true,
-    pages: 2,
     selectMultiple: true,
     responsive: {
+        xlarge: {
+            pages: 2,
+        },
+        large: {
+            pages: 2,
+        },
+        medium: {
+            pages: 2,
+        },
         small: {
             pages: 1
         },
