@@ -32,6 +32,7 @@ header {
   height: 20px;
   width: auto;
   position: relative;
+  cursor: pointer;
 }
 .right__box--currency {
   font-family: "Roboto", sans-serif;
@@ -41,6 +42,7 @@ header {
   line-height: 20px;
   color: #84878b;
   margin-right: 14px;
+  cursor: pointer;
 }
 .right__box--icon img:last-child {
   margin: 0 17px;
@@ -57,8 +59,8 @@ header {
   border-radius: 50%;
   font-style: normal;
   font-weight: 500;
-  font-size: 4.8189px;
-  line-height: 7px;
+  font-size: 6px;
+  line-height: 9px;
   color: #FFFFFF;
   background: #EB5757;
 }
@@ -66,6 +68,7 @@ header {
   width: 32px;
   height: 32px;
   margin: 0 10px 0 20px;
+  cursor: pointer;
 }
 .user__box {
   width: auto;
@@ -83,6 +86,7 @@ header {
   right: 3px;
   bottom: auto;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .user__name {
   font-family: "Roboto", sans-serif;
@@ -654,6 +658,7 @@ header {
   );
   border-radius: 16px;
   overflow: hidden;
+  cursor: pointer;
 }
 .top-tour-items::before {
   position: absolute;
@@ -735,6 +740,7 @@ header {
   border-radius: 50%;
   color: #b1b5c3;
   font-size: 17px;
+  transition: all 0.3s ease-in-out;
 }
 .explore-items {
   background: #ffffff;
@@ -1125,4 +1131,17 @@ header {
 }
 .form-control:disabled, .form-control[readonly] {
   background-color: #f4f5f7;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: none;
+}
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.barcelona-tour, .london-tour, .australia-tour, .japan-tour{
+  cursor: pointer;
 }
