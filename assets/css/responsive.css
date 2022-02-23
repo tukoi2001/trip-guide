@@ -1,5 +1,82 @@
 @media (min-width: 1024px) {
-  /* Hover */
+  .service-list a:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -28px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  .service-list a:hover,
+  .service-list a:focus {
+    color: #3b3e44;
+  }
+  .service-list a:focus:before,
+  .service-list a:hover:before {
+    background-color: #316bff;
+    transform: scale(1);
+  }
+  .location:hover,
+  .check-in:hover,
+  .check-out:hover,
+  .location:focus-within,
+  .check-in:focus-within,
+  .check-out:focus-within {
+    background: #e8efff;
+  }
+  .location:hover .form-control,
+  .check-in:hover .form-control,
+  .check-out:hover .form-control,
+  .location:focus-within .form-control,
+  .check-in:focus-within .form-control,
+  .check-out:focus-within .form-control {
+    background: #e8efff;
+  }
+  .active-input {
+    background: #e8efff;
+  }
+  .best-place__box:hover {
+    background: #ffffff;
+    box-shadow: 0px 20px 51px rgb(96 96 96 / 10%);
+    border-color: #fff;
+  }
+  .footer__nav li a:hover {
+    color: #316bff;
+  }
+  .pro-offers__button button:hover {
+    opacity: .85;
+  }
+  .travel-your-passion__img img:hover {
+    transform: scale(1.05);
+  }
+  .trending-cites-book button:hover {
+    border-color: #316bff;
+    color: #316bff;
+    background-color: #fff;
+  }
+  .explore-items:hover {
+    box-shadow: 0px 15px 45px rgba(102, 102, 102, 0.1);
+    border-color: #fff;
+  }
+  .logo__title:hover { 
+    color: #222529;
+  }
+  .service-information__link:hover {
+    color: #000;
+  }
+  .service-information__link:hover::after {
+    transform: rotate(180deg);
+  }
+  .content__search button:hover {
+    border-color: #316bff;
+    color: #316bff;
+    background-color: #fff;
+  }
 }
 @media (max-width: 1400px) {
   .headline h2 {
@@ -23,6 +100,9 @@
   }
 }
 @media (max-width: 1200px) {
+  .location_items {
+    min-width: 370px;
+  }
   .headline {
     top: 140px;
   }
@@ -177,6 +257,11 @@
   }
 }
 @media (max-width: 991px) {
+  .location_items {
+    min-width: 280px;
+    top: 140px;
+    left: 16px;
+}
   .headline h2 {
     font-size: 45px;
     line-height: 63px;
@@ -411,6 +496,11 @@
   }
 }
 @media (max-width: 767px) {
+  .location_items {
+    min-width: 300px;
+    top: 193px;
+    left: 20px;
+}
   .location__arrow,
   .check-in__arrow {
     display: none;
@@ -634,6 +724,11 @@
 }
 
 @media (max-width: 575px) {
+  .location_items {
+    min-width: 484px;
+    top: 193px;
+    left: 20px;
+  }
   .user__box::before {
     display: none;
   }
@@ -848,6 +943,11 @@
   }
 }
 @media (max-width: 461px) {
+  .location_items {
+    min-width: 371px;
+    top: 193px;
+    left: 1px;
+  }
   .pro-offers__des h2 {
     padding: 14px 90px 0 18px;
     font-size: 28px;
